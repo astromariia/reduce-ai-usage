@@ -102,7 +102,7 @@ option1.addEventListener('click', function () {
 });
 
 option2.addEventListener('click', function () {
-  window.location.href = 'https://www.google.com/search?q=python+documentation&rlz=1C1ONGR_enUS1080US1080&oq=python+documentation&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiDARixAxiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIGCAYQRRg8MgYIBxBFGEHSAQg4OTM3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8';
+  window.location.href = 'https://docs.python.org/3/';
   closePopup();
 });
 
