@@ -111,6 +111,20 @@ option3.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
 option3.addEventListener('mouseover', () => (option3.style.backgroundColor = '#21867a'));
 option3.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a9d8f'));
 
+const option4 = document.createElement('button');
+option3.textContent = "NO! Go to Google";
+option3.style.backgroundColor = '#2a9d8f';
+option3.style.color = '#ffffff';
+option3.style.border = 'none';
+option3.style.borderRadius = '5px';
+option3.style.padding = '10px 20px';
+option3.style.cursor = 'pointer';
+option3.style.fontSize = '16px';
+option3.style.margin = '10px';
+option3.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+option3.addEventListener('mouseover', () => (option3.style.backgroundColor = '#21867a'));
+option3.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a9d8f'));
+
 option3.addEventListener('click', function () {
   window.location.href = 'https://isocpp.org/std/the-standard';
   closePopup();
@@ -125,10 +139,16 @@ option2.addEventListener('click', function () {
   closePopup();
 });
 
+option4.addEventListener('click', function () {
+  window.location.href = 'https://www.google.com/';
+  closePopup();
+});
+
 popup.appendChild(question);
 popup.appendChild(option1);
 popup.appendChild(option2);
 popup.appendChild(option3);
+popup.appendChild(option4);
 
 document.body.appendChild(popup);
 
