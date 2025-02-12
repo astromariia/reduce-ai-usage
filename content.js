@@ -128,6 +128,7 @@ option2.addEventListener('click', function () {
 popup.appendChild(question);
 popup.appendChild(option1);
 popup.appendChild(option2);
+popup.appendChild(option3);
 
 document.body.appendChild(popup);
 
