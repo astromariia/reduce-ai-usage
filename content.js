@@ -71,7 +71,7 @@ question.style.fontSize = '18px';
 question.style.marginBottom = '20px';
 
 const option1 = document.createElement('button');
-option1.textContent = "YES!!11!";
+option1.textContent = "YES!!!";
 option1.style.backgroundColor = '#e63946';
 option1.style.color = '#ffffff';
 option1.style.border = 'none';
