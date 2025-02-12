@@ -84,7 +84,7 @@ option1.addEventListener('mouseover', () => (option1.style.backgroundColor = '#d
 option1.addEventListener('mouseout', () => (option1.style.backgroundColor = '#e63946'));
 
 const option2 = document.createElement('button');
-option2.textContent = "NO! I need to read the docs!";
+option2.textContent = "NO! I need to read the python docs!";
 option2.style.backgroundColor = '#457b9d';
 option2.style.color = '#ffffff';
 option2.style.border = 'none';
@@ -96,6 +96,25 @@ option2.style.margin = '10px';
 option2.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
 option2.addEventListener('mouseover', () => (option2.style.backgroundColor = '#1d3557'));
 option2.addEventListener('mouseout', () => (option2.style.backgroundColor = '#457b9d'));
+
+const option3 = document.createElement('button');
+option3.textContent = "NO! Read the C++ docs";
+option3.style.backgroundColor = '#2a9d8f';
+option3.style.color = '#ffffff';
+option3.style.border = 'none';
+option3.style.borderRadius = '5px';
+option3.style.padding = '10px 20px';
+option3.style.cursor = 'pointer';
+option3.style.fontSize = '16px';
+option3.style.margin = '10px';
+option3.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+option3.addEventListener('mouseover', () => (option3.style.backgroundColor = '#21867a'));
+option3.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a9d8f'));
+
+option3.addEventListener('click', function () {
+  window.location.href = 'https://isocpp.org/std/the-standard';
+  closePopup();
+});
 
 option1.addEventListener('click', function () {
   closePopup();
