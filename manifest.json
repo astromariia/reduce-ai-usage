@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "AI Pop-up",
   "version": "1.0",
-  "description": "Popup on chatgpt and deepseek with a question and two options.",
+  "description": "Popup on chatgpt and deepseek and claude with a question and two options.",
   "permissions": [
     "storage",
     "declarativeContent",
@@ -19,7 +19,8 @@
     {
       "matches": [
         "*://chat.openai.com/*",
-        "*://*.deepseek.com/*" 
+        "*://*.deepseek.com/*",
+        "*://*.claude.ai/*" 
       ],
       "js": [
         "content.js"

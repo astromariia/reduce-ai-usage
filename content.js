@@ -18,6 +18,7 @@ function detectPlatform() {
   const host = window.location.hostname;
   if (host.includes('deepseek.com')) return 'deepseek';  // ADD THIS LINE
   if (host.includes('openai.com')) return 'chatgpt';
+  if (host.includes('claude.ai')) return 'claude';
   return null;
 }
 
@@ -113,7 +114,7 @@ option3.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a
 
 const option4 = document.createElement('button');
 option4.textContent = "NO! Go to Google";
-option4.style.backgroundColor = '#2a9d8f';
+option4.style.backgroundColor = '#ff8c00';
 option4.style.color = '#ffffff';
 option4.style.border = 'none';
 option4.style.borderRadius = '5px';
