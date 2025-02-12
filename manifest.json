@@ -18,7 +18,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://chatgpt.com/*"
+        "*://chat.openai.com/*",
+        "*://*.deepseek.com/*" 
       ],
       "js": [
         "content.js"

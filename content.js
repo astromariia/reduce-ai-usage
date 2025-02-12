@@ -1,4 +1,47 @@
 // content.js
+const PLATFORMS = {
+  chatgpt: {
+    inputSelector: 'textarea[aria-label*="message"]',
+    buttonSelector: 'button[data-testid*="send"]',
+    charCountSelector: '.remaining span',
+    domain: 'chat.openai.com'
+  },
+  deepseek: {  // ADD DEEPSEEK CONFIG
+    inputSelector: '.input-box textarea', // Verify with DevTools
+    buttonSelector: 'button.send-button', // Verify with DevTools
+    charCountSelector: '.char-counter', // Verify with DevTools
+    domain: 'www.deepseek.com'
+  }
+};
+
+function detectPlatform() {
+  const host = window.location.hostname;
+  if (host.includes('deepseek.com')) return 'deepseek';  // ADD THIS LINE
+  if (host.includes('openai.com')) return 'chatgpt';
+  return null;
+}
+
+function initializePlatform() {
+  const platform = detectPlatform();
+  if (!platform) return;
+
+  const config = PLATFORMS[platform];
+  
+  const observer = new MutationObserver(() => {
+    // MODIFIED TO USE CONFIG SELECTORS
+    const input = document.querySelector(config.inputSelector);
+    const button = document.querySelector(config.buttonSelector);
+    
+    if (input && button) {
+      // Add your existing enforcement logic here
+      enforceUsageLimits(input, button, config);
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+}
+
+initializePlatform();
 console.log("Extension by @FujiwaraChoki on GitHub.");
 const popup = document.createElement('div');
 popup.style.position = 'fixed';
@@ -41,7 +84,7 @@ option1.addEventListener('mouseover', () => (option1.style.backgroundColor = '#d
 option1.addEventListener('mouseout', () => (option1.style.backgroundColor = '#e63946'));
 
 const option2 = document.createElement('button');
-option2.textContent = "Listen to Qur'an";
+option2.textContent = "NO! I need to read the docs!";
 option2.style.backgroundColor = '#457b9d';
 option2.style.color = '#ffffff';
 option2.style.border = 'none';
@@ -59,7 +102,7 @@ option1.addEventListener('click', function () {
 });
 
 option2.addEventListener('click', function () {
-  window.location.href = 'https://youtu.be/KvK_d9edjPM?si=45eAEFowvcAOfJ6y';
+  window.location.href = 'https://www.google.com/search?q=python+documentation&rlz=1C1ONGR_enUS1080US1080&oq=python+documentation&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiDARixAxiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIGCAYQRRg8MgYIBxBFGEHSAQg4OTM3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8';
   closePopup();
 });
 
