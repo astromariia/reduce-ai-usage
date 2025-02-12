@@ -6,7 +6,7 @@ This extensions aims to help you to reduce your Usage of ChatGPT and Deepseek.
 
 1. Clone this repository
 ```bash
-git clone [https://github.com/astromariia/reduce-ai-usage.git]
+git clone [(https://github.com/astromariia/reduce-ai-usage.git)]
 ```
 
 2. Open Chrome
