@@ -112,18 +112,18 @@ option3.addEventListener('mouseover', () => (option3.style.backgroundColor = '#2
 option3.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a9d8f'));
 
 const option4 = document.createElement('button');
-option3.textContent = "NO! Go to Google";
-option3.style.backgroundColor = '#2a9d8f';
-option3.style.color = '#ffffff';
-option3.style.border = 'none';
-option3.style.borderRadius = '5px';
-option3.style.padding = '10px 20px';
-option3.style.cursor = 'pointer';
-option3.style.fontSize = '16px';
-option3.style.margin = '10px';
-option3.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
-option3.addEventListener('mouseover', () => (option3.style.backgroundColor = '#21867a'));
-option3.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a9d8f'));
+option4.textContent = "NO! Go to Google";
+option4.style.backgroundColor = '#2a9d8f';
+option4.style.color = '#ffffff';
+option4.style.border = 'none';
+option4.style.borderRadius = '5px';
+option4.style.padding = '10px 20px';
+option4.style.cursor = 'pointer';
+option4.style.fontSize = '16px';
+option4.style.margin = '10px';
+option4.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+option4.addEventListener('mouseover', () => (option3.style.backgroundColor = '#21867a'));
+option4.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a9d8f'));
 
 option3.addEventListener('click', function () {
   window.location.href = 'https://isocpp.org/std/the-standard';
