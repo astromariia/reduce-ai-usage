@@ -123,8 +123,8 @@ option4.style.cursor = 'pointer';
 option4.style.fontSize = '16px';
 option4.style.margin = '10px';
 option4.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
-option4.addEventListener('mouseover', () => (option3.style.backgroundColor = '#21867a'));
-option4.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a9d8f'));
+option4.addEventListener('mouseover', () => (option4.style.backgroundColor = '#ff7f00'));
+option4.addEventListener('mouseout', () => (option4.style.backgroundColor = '#ff8c00'));
 
 
 const option5 = document.createElement('button');
@@ -138,8 +138,8 @@ option5.style.cursor = 'pointer';
 option5.style.fontSize = '16px';
 option5.style.margin = '10px';
 option5.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
-option5.addEventListener('mouseover', () => (option3.style.backgroundColor = '#21867a'));
-option5.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a9d8f'));
+option5.addEventListener('mouseover', () => (option5.style.backgroundColor = '#a95cf4'));
+option5.addEventListener('mouseout', () => (option5.style.backgroundColor = '#b95cf4'));
 
 const option6 = document.createElement('button');
 option6.textContent = "NO! Go to Geeks for Geeks";
@@ -152,8 +152,8 @@ option6.style.cursor = 'pointer';
 option6.style.fontSize = '16px';
 option6.style.margin = '10px';
 option6.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
-option6.addEventListener('mouseover', () => (option3.style.backgroundColor = '#21867a'));
-option6.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a9d8f'));
+option6.addEventListener('mouseover', () => (option6.style.backgroundColor = '#32a852'));
+option6.addEventListener('mouseout', () => (option6.style.backgroundColor = '#3cb043'));
 
 
 option1.addEventListener('click', function () {
