@@ -143,7 +143,7 @@ option5.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a
 
 const option6 = document.createElement('button');
 option6.textContent = "NO! Go to Geeks for Geeks";
-option5.style.backgroundColor = '#3cb043';
+option6.style.backgroundColor = '#3cb043';
 option6.style.color = '#ffffff';
 option6.style.border = 'none';
 option6.style.borderRadius = '5px';
