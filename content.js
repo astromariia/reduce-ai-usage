@@ -191,7 +191,7 @@ popup.appendChild(option2);
 popup.appendChild(option3);
 popup.appendChild(option4);
 popup.appendChild(option5);
-popup.appendChild(option5);
+popup.appendChild(option6);
 
 document.body.appendChild(popup);
 
