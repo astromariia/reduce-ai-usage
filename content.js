@@ -129,7 +129,7 @@ option4.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a
 
 const option5 = document.createElement('button');
 option5.textContent = "NO! Go to W3 Schools";
-option5.style.color = '##b95cf4';
+option5.style.color = '#b95cf4';
 option5.style.border = 'none';
 option5.style.borderRadius = '5px';
 option5.style.padding = '10px 20px';
@@ -142,7 +142,7 @@ option5.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a
 
 const option6 = document.createElement('button');
 option6.textContent = "NO! Go to Geeks for Geeks";
-option6.style.color = '##3cb043';
+option6.style.color = '#3cb043';
 option6.style.border = 'none';
 option6.style.borderRadius = '5px';
 option6.style.padding = '10px 20px';
