@@ -1,6 +1,6 @@
 # Reduce AI Usage
 
-This extensions aims to help you to reduce your Usage of ChatGPT and Deepseek.
+This extensions aims to help you to reduce your Usage of ChatGPT, Deepseek, and Claude.
 
 ## How to use
 
