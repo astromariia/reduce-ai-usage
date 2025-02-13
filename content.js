@@ -129,7 +129,8 @@ option4.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a
 
 const option5 = document.createElement('button');
 option5.textContent = "NO! Go to W3 Schools";
-option5.style.color = '#b95cf4';
+option5.style.backgroundColor = '#b95cf4';
+option5.style.color = '#ffffff';
 option5.style.border = 'none';
 option5.style.borderRadius = '5px';
 option5.style.padding = '10px 20px';
@@ -142,7 +143,8 @@ option5.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a
 
 const option6 = document.createElement('button');
 option6.textContent = "NO! Go to Geeks for Geeks";
-option6.style.color = '#3cb043';
+option5.style.backgroundColor = '#3cb043';
+option6.style.color = '#ffffff';
 option6.style.border = 'none';
 option6.style.borderRadius = '5px';
 option6.style.padding = '10px 20px';
@@ -189,7 +191,7 @@ popup.appendChild(option2);
 popup.appendChild(option3);
 popup.appendChild(option4);
 popup.appendChild(option5);
-popup.appendChild(option6);
+popup.appendChild(option5);
 
 document.body.appendChild(popup);
 
