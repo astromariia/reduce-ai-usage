@@ -126,10 +126,33 @@ option4.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
 option4.addEventListener('mouseover', () => (option3.style.backgroundColor = '#21867a'));
 option4.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a9d8f'));
 
-option3.addEventListener('click', function () {
-  window.location.href = 'https://isocpp.org/std/the-standard';
-  closePopup();
-});
+
+const option5 = document.createElement('button');
+option5.textContent = "NO! Go to W3 Schools";
+option5.style.color = '##b95cf4';
+option5.style.border = 'none';
+option5.style.borderRadius = '5px';
+option5.style.padding = '10px 20px';
+option5.style.cursor = 'pointer';
+option5.style.fontSize = '16px';
+option5.style.margin = '10px';
+option5.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+option5.addEventListener('mouseover', () => (option3.style.backgroundColor = '#21867a'));
+option5.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a9d8f'));
+
+const option6 = document.createElement('button');
+option6.textContent = "NO! Go to Geeks for Geeks";
+option6.style.color = '##3cb043';
+option6.style.border = 'none';
+option6.style.borderRadius = '5px';
+option6.style.padding = '10px 20px';
+option6.style.cursor = 'pointer';
+option6.style.fontSize = '16px';
+option6.style.margin = '10px';
+option6.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+option6.addEventListener('mouseover', () => (option3.style.backgroundColor = '#21867a'));
+option6.addEventListener('mouseout', () => (option3.style.backgroundColor = '#2a9d8f'));
+
 
 option1.addEventListener('click', function () {
   closePopup();
@@ -140,8 +163,23 @@ option2.addEventListener('click', function () {
   closePopup();
 });
 
+option3.addEventListener('click', function () {
+  window.location.href = 'https://isocpp.org/std/the-standard';
+  closePopup();
+});
+
 option4.addEventListener('click', function () {
   window.location.href = 'https://www.google.com/';
+  closePopup();
+});
+
+option5.addEventListener('click', function () {
+  window.location.href = 'https://www.w3schools.com/';
+  closePopup();
+});
+
+option6.addEventListener('click', function () {
+  window.location.href = 'https://www.geeksforgeeks.org/';
   closePopup();
 });
 
@@ -150,6 +188,8 @@ popup.appendChild(option1);
 popup.appendChild(option2);
 popup.appendChild(option3);
 popup.appendChild(option4);
+popup.appendChild(option5);
+popup.appendChild(option6);
 
 document.body.appendChild(popup);
 
