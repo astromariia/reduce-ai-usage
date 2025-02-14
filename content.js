@@ -85,7 +85,7 @@ option1.addEventListener('mouseover', () => (option1.style.backgroundColor = '#d
 option1.addEventListener('mouseout', () => (option1.style.backgroundColor = '#e63946'));
 
 const option2 = document.createElement('button');
-option2.textContent = "NO! I need to read the python docs!";
+option2.textContent = "NO! Read the python docs!";
 option2.style.backgroundColor = '#457b9d';
 option2.style.color = '#ffffff';
 option2.style.border = 'none';
