@@ -166,7 +166,7 @@ option2.addEventListener('click', function () {
 });
 
 option3.addEventListener('click', function () {
-  window.location.href = 'https://isocpp.org/std/the-standard';
+  window.location.href = 'https://devdocs.io/cpp/';
   closePopup();
 });
 
